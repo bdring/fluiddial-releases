@@ -1,0 +1,1 @@
+This repository contains official releases for [FluidDial](https://github.com/bdring/FluidDial). It is the primary source of FluidDial data for [FluidNC Web Installer](https://installer.fluidnc.com/).
