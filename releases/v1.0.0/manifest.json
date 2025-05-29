@@ -7,20 +7,20 @@
   "images": {
     "m5dial": {
       "size": 8323072,
-      "offset": "0x1000",
-      "path": "m5dial/merged-flash.bin",
+      "offset": "0x0000",
+      "path": "m5dial.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "d1c9288991aa9817ce18f599c24be6cc72b2bc270fe04de1d8f6423629cb3c9c"
+        "value": "4bd51900d51e05930a968e852f07d8f34cf9c0178ce784dbdfc3e3c506b02adb"
       }
     },
     "cyddial": {
       "size": 4128768,
-      "offset": "0x1000",
-      "path": "cyddial/merged-flash.bin",
+      "offset": "0x0000",
+      "path": "cyddial.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "765d36a4e9b4fa428d176a442c95b31f487498271b05a5807e0f03101023b685"
+        "value": "ec8eef3ccd8442bf17ca785eaffefebd8ea3b1c4e0f8576bd4766fb550f27746"
       }
     }
   },
