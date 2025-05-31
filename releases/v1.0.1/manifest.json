@@ -1,0 +1,65 @@
+{
+  "name": "FluidDial",
+  "version": "v1.0.1",
+  "source_url": "https://github.com/bdring/FluidDial/tree/v1.0.1",
+  "release_url": "https://github.com/bdring/FluidDial/releases/tag/v1.0.1",
+  "funding_url": "https://www.paypal.com/donate/?hosted_button_id=8DYLB6ZYYDG7Y",
+  "images": {
+    "m5dial": {
+      "size": 8323072,
+      "offset": "0x0000",
+      "path": "m5dial.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "b075d0776ba653c5206f1d155a198c5db4b3e4d8ffbffc60038567f50e1151ad"
+      }
+    },
+    "cyddial": {
+      "size": 4128768,
+      "offset": "0x0000",
+      "path": "cyddial.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "c3c37aee06996f96ade97c099203ff23fc0beb077ba61e53be885c50a26c272a"
+      }
+    }
+  },
+  "files": {},
+  "installable": {
+    "name": "installable",
+    "description": "Things you can install",
+    "choice-name": "Dial type",
+    "choices": [
+      {
+        "name": "FluidDial for M5Dial",
+        "description": "FluidDial for M5Dial",
+        "choice-name": "FluidDial type",
+        "choices": [
+          {
+            "name": "install",
+            "description": "Complete FluidDial installation",
+            "erase": true,
+            "images": [
+              "m5dial"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "FluidDial for CYD",
+        "description": "FluidDial for CYD Dial",
+        "choice-name": "FluidDial type",
+        "choices": [
+          {
+            "name": "install",
+            "description": "Complete FluidDial installation",
+            "erase": true,
+            "images": [
+              "cyddial"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
