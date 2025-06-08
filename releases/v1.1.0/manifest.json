@@ -11,7 +11,7 @@
       "path": "m5dial.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "24dc0877c814f7a77116a2a5620f181f115c3bdbd016a4811f9b999bf4872751"
+        "value": "77df3a9c33084045ef0966d12fb7888ec8fe95e7afef5c1fa0450ce1678629b4"
       }
     },
     "cyddial": {
@@ -20,7 +20,7 @@
       "path": "cyddial.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "b9c50fb241ca71ddec7b6aa30974587b4e302ab7b5096e72af679f62fa06bdf0"
+        "value": "e26284255cfa658ae59dec67b5263bf8f98cb0449e347c821b1fc842bde3a5b5"
       }
     }
   },
