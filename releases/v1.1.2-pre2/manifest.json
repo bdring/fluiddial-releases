@@ -1,0 +1,79 @@
+{
+  "name": "FluidDial",
+  "version": "v1.1.2-pre2",
+  "source_url": "https://github.com/bdring/FluidDial/tree/v1.1.2-pre2",
+  "release_url": "https://github.com/bdring/FluidDial/releases/tag/v1.1.2-pre2",
+  "funding_url": "https://www.paypal.com/donate/?hosted_button_id=8DYLB6ZYYDG7Y",
+  "images": {
+    "m5dial": {
+      "size": 8323072,
+      "offset": "0x0000",
+      "path": "m5dial.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "4268c4194ce39a7fed9310adceab36455a40094fb754f2935d6e8743cef45a93"
+      }
+    },
+    "cyddial": {
+      "size": 4128768,
+      "offset": "0x0000",
+      "path": "cyddial.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "775deb2bf17ff72b9515449057c94d2ea17bdb812591cc4a5c0c460c8c2c2e35"
+      }
+    }
+  },
+  "files": {},
+  "installable": {
+    "name": "installable",
+    "description": "Things you can install",
+    "choice-name": "Processor type",
+    "choices": [
+      {
+        "name": "esp32",
+        "description": "ESP32-WROOM",
+        "choice-name": "Firmware variant",
+        "choices": [
+          {
+            "name": "FluidDial for CYD",
+            "description": "FluidDial for CYD Dial",
+            "choice-name": "FluidDial type",
+            "choices": [
+              {
+                "name": "install",
+                "description": "Complete FluidDial installation",
+                "erase": true,
+                "images": [
+                  "cyddial"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "esp32s3",
+        "description": "ESP32-S3-WROOM-1",
+        "choice-name": "Firmware variant",
+        "choices": [
+          {
+            "name": "FluidDial for M5Dial",
+            "description": "FluidDial for M5Dial",
+            "choice-name": "FluidDial type",
+            "choices": [
+              {
+                "name": "install",
+                "description": "Complete FluidDial installation",
+                "erase": true,
+                "images": [
+                  "m5dial"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
