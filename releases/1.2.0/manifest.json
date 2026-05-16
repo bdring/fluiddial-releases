@@ -1,0 +1,79 @@
+{
+  "name": "FluidDial",
+  "version": "1.2.0",
+  "source_url": "https://github.com/bdring/FluidDial/tree/1.2.0",
+  "release_url": "https://github.com/bdring/FluidDial/releases/tag/1.2.0",
+  "funding_url": "https://www.paypal.com/donate/?hosted_button_id=8DYLB6ZYYDG7Y",
+  "images": {
+    "m5dial": {
+      "size": 8323072,
+      "offset": "0x0000",
+      "path": "m5dial.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "111e5540bcd97ab183e73d5cd2966e5e8a89bbba74c0604087197f4cd4eb45c9"
+      }
+    },
+    "cyddial": {
+      "size": 4128768,
+      "offset": "0x0000",
+      "path": "cyddial.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "1b5bb2f56467d3934710af3a824fba7b312d676831d587a845ee30c76efa522a"
+      }
+    }
+  },
+  "files": {},
+  "installable": {
+    "name": "installable",
+    "description": "Things you can install",
+    "choice-name": "Processor type",
+    "choices": [
+      {
+        "name": "esp32",
+        "description": "ESP32-WROOM",
+        "choice-name": "Firmware variant",
+        "choices": [
+          {
+            "name": "FluidDial for CYD",
+            "description": "FluidDial for CYD Dial",
+            "choice-name": "FluidDial type",
+            "choices": [
+              {
+                "name": "install",
+                "description": "Complete FluidDial installation",
+                "erase": true,
+                "images": [
+                  "cyddial"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "esp32s3",
+        "description": "ESP32-S3-WROOM-1",
+        "choice-name": "Firmware variant",
+        "choices": [
+          {
+            "name": "FluidDial for M5Dial",
+            "description": "FluidDial for M5Dial",
+            "choice-name": "FluidDial type",
+            "choices": [
+              {
+                "name": "install",
+                "description": "Complete FluidDial installation",
+                "erase": true,
+                "images": [
+                  "m5dial"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
